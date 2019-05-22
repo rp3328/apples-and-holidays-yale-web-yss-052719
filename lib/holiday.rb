@@ -63,7 +63,7 @@ def all_supplies_in_holidays(holiday_hash)
       arr2 = name.to_s.split #tostring and split
       arr2.each{|word| arr << word.capitalize!} #capitalize each word
 
-      name = arr.join("") #array to string
+      name = arr.join(" ") #array to string
       supply = supply.join(", ")
       puts "#{name}: #{supply}"
     end
@@ -81,5 +81,5 @@ def all_holidays_with_bbq(holiday_hash)
       end
     end
   end
-  array
+  arr
 end
