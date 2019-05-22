@@ -60,7 +60,7 @@ def all_supplies_in_holidays(holiday_hash)
     holiday.each do |name, supply|
       arr = []
 
-      arr2 = name.to_s.split #tostring and split
+      arr2 = name.to_s.split("_") #tostring and split
       arr2.each{|word| arr << word.capitalize!} #capitalize each word
 
       name = arr.join(" ") #array to string
